@@ -1,5 +1,5 @@
 # FreeCodeCamp Request Header Parser Microservice Project
-Welcome to the FreeCodeCamp Request Header Parser Microservice project, showcasing how to use Express.js to in full-stack JavaScript development to build an API that can parse and retrieve information from HTTP request headers .
+Welcome to the FreeCodeCamp Request Header Parser Microservice project, showcasing how to use Express.js in full-stack JavaScript development to build an API that can parse and retrieve information from HTTP request headers .
 The primary purpose of this project is to demonstrate the ability to extract specific details from incoming HTTP requests and present them ,providing information about the client's environment in a structured JSON format that can be used later.
 
 # Live Demo
