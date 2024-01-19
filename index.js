@@ -19,9 +19,10 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// your first API endpoint...
+// request header parser microserver
 app.get('/api/whoami', function (req, res) {
-  let ip = req.ip
+  let ip = req.headers['x-forwarded-for'] || req.headers['x-real-ip'] || req.connection.remoteAddress //here i parsed through the request headers
+  // for the language and software info i chose to use the req.get() method instead of parsing through req.headers() for a change
   let language = req.get('accept-language')
   let soft = req.get('user-agent')
   res.json({ipaddress:ip,language:language,software:soft});
